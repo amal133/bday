@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111523" />
+  <meta name="description" content="A little birthday universe made for Avanthika." />
+  <title>For Avanthika — a birthday surprise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sky" aria-hidden="true"><div class="starscape" id="starscape"></div><div class="nebula nebula-a"></div><div class="nebula nebula-b"></div><div class="moon"></div></div>
+  <main class="site">
+    <header class="masthead"><a class="wordmark" href="#top" aria-label="A birthday surprise for Avanthika"><span class="wordmark-mark">✳</span> a little birthday universe</a><span class="edition">MADE FOR AVANTHIKA <i>·</i> 01 / 01</span></header>
+
+    <section class="welcome" id="welcome" aria-labelledby="welcome-title">
+      <div class="welcome-copy">
+        <p class="kicker"><span class="kicker-line"></span> A NOTE FROM YOUR PEOPLE</p>
+        <h1 id="welcome-title">The universe<br />has a little <em>surprise</em><br />for you.</h1>
+        <p class="welcome-sub">Somewhere between the stars and the candlelight,<br class="desktop-only" /> there’s a birthday wish with your name on it.</p>
+        <button class="open-button" id="open-button" type="button"><span>Open your surprise</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+        <p class="whisper">Psst… keep an eye out for the little stars.</p>
+      </div>
+      <div class="welcome-art" aria-hidden="true">
+        <div class="halo halo-one"></div><div class="halo halo-two"></div>
+        <div class="ribbon-card"><span class="ribbon-top">A SMALL WISH</span><span class="ribbon-star">✳</span><span class="ribbon-name">A<span>.</span></span><span class="ribbon-bottom">JUST FOR YOU</span></div>
+        <span class="orbit-star orbit-star-a">✦</span><span class="orbit-star orbit-star-b">✧</span><span class="orbit-star orbit-star-c">·</span>
+      </div>
+      <span class="welcome-index">SCROLL LESS, WISH MORE <span>↓</span></span>
+    </section>
+
+    <section class="birthday" id="birthday" aria-labelledby="birthday-title" hidden>
+      <div class="birthday-heading">
+        <p class="kicker"><span class="kicker-line"></span> TONIGHT IS YOURS</p>
+        <h2 id="birthday-title">Happy birthday,<br /><em>Avanthika.</em></h2>
+        <p class="birthday-sub">Make a wish. The night is listening.</p>
+      </div>
+
+      <div class="night-scene" id="night-scene">
+        <div class="constellation constellation-one" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+        <div class="constellation constellation-two" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+        <button class="secret-star secret-one" type="button" aria-label="Find a little birthday note" data-note="You have a way of making the people around you feel more at home.">✦</button>
+        <button class="secret-star secret-two" type="button" aria-label="Find a little birthday note" data-note="You deserve a year full of things that make you forget to check your phone.">✧</button>
+        <button class="secret-star secret-three" type="button" aria-label="Find a little birthday note" data-note="The world is a bit brighter with you in it. This is just a fact.">✦</button>
+        <div class="cake-platform"><span class="platform-light"></span></div>
+        <div class="cake" aria-label="A birthday cake with a lit candle">
+          <div class="flame" id="flame"><span></span></div><div class="wick"></div><div class="candle"></div>
+          <div class="cake-top"><i></i><i></i><i></i></div>
+          <div class="cake-layer layer-top"><span class="drip drip-a"></span><span class="drip drip-b"></span><span class="drip drip-c"></span></div>
+          <div class="cake-layer layer-bottom"><span class="berry berry-a"></span><span class="berry berry-b"></span><span class="berry berry-c"></span></div>
+          <div class="cake-plate"></div>
+        </div>
+        <div class="scene-caption"><span>ONE WISH, COMING RIGHT UP</span><span class="caption-rule"></span><span>✧</span></div>
+      </div>
+
+      <div class="wish-controls">
+        <p class="secret-count" id="secret-count" aria-live="polite">3 little stars are hiding in the night</p>
+        <div class="note-pop" id="note-pop" role="status" hidden></div>
+        <p class="prompt" id="prompt">Take a breath, then blow out the candle.</p>
+        <div class="blow-actions" id="blow-actions">
+          <button class="open-button blow-button" id="mic-button" type="button"><span>Blow with your voice</span><span class="button-arrow" aria-hidden="true">⌁</span></button>
+          <button class="tap-button" id="tap-button" type="button">Tap to blow it out instead <span aria-hidden="true">→</span></button>
+        </div>
+        <p class="mic-note" id="mic-note">Microphone is optional · audio stays on your device</p>
+        <article class="wish-letter" id="wish-letter" aria-live="polite" hidden>
+          <div class="letter-ornament">✳ <span></span> ✳</div>
+          <p class="letter-label">A WISH FOR YOUR NEXT CHAPTER</p>
+          <p class="letter-message">May the year ahead bring you more reasons to laugh, new things to look forward to, good people close by, and plenty of moments that feel like your kind of happy.</p>
+          <p class="letter-signoff">Happy birthday, Avanthika. <span>♡</span></p>
+          <button class="gift-button" id="gift-button" type="button" aria-expanded="false">There’s one more little thing <span aria-hidden="true">＋</span></button>
+          <div class="gift-note" id="gift-note" hidden><span class="gift-stamp">A NOTE TO KEEP</span><p>Consider this permission to take up space, try the thing you’ve been thinking about, and make this next year unmistakably yours. I’m really glad we’re friends.</p><span class="gift-sign">With love, always ✳</span></div>
+        </article>
+      </div>
+    </section>
+    <footer class="footer"><span>THE STARS SAVED YOU A SEAT</span><span>✳</span><span>HAVE THE LOVELIEST DAY</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
